@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  background-color: black;
+  overflow: hidden;
+  padding: 9px 16px;
+  position: fixed;
+  width: 100%;
+  height: 54px;
+  z-index: 100;
+}
+
+
+.nav ul {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 10px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 150px;
+  display: block;
+}
+
+
+.nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.home {
+  filter: grayscale(50%);
+  min-height: 75vh;
+  background-image: url(img/coffeehouse.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.home h1 {
+  font-size: 75px;
+  text-align: center;
+  padding-top: 145px;
+  margin-bottom: 120px;
+  line-height: 1.5;
+  font-weight: 200;
+  letter-spacing: 5px;
+}
+
+.home .left {
+  color: white;
+  background-color: black;
+  font-size: 8px;
+  padding: 5px;
+  float: left;
+  margin-left: 15px;
+  margin-top: -5px;
+  word-spacing: 4px;
+
+}
+
+.home .right {
+  font-size: 8px;
+  float: right;
+  padding: 12px 24px;
+  margin-right: 15px;
+  margin-top: -5px;
+  word-spacing: 5px;
+  box-sizing: inherit;
+}
+
+.about {
+  text-align: center;
+  background-color: white;
+  padding: 12px 24px;
+  display: flex;
+  flex-direction: column;
+  font-family: consolas, "couier New", monospace;
+  max-width: 850px;
+  margin: 80px auto;
+}
+
+.about h5 {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 80px;
+  padding: 0 8px;
+  width: 250px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.about .up p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  display: block;
+  text-align: left;
+  padding: 0 55px;
+}
+
+.about .down p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  display: block;
+  text-align: left;
+  padding: 0 55px;
+}
+
+.about .quote {
+  font-style: italic;
+  margin: 20px 55px;
+  text-align: left;
+  padding: 25px 20px 0px 20px;
+  border-left: 5.5px solid rgb(223, 222, 222);
+}
+
+.about .quote span {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.about img {
+  margin: 20px 55px;
+  margin-top: 40px;
+  filter: grayscale(75%);
+  opacity: 1;
+}
+
+.about .after {
+  margin: 0px 55px;
+  display: block;
+  text-align: left;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.after div {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+
+.menu {
+  text-align: center;
+  padding: 12px 24px 60px;
+  display: flex;
+  flex-direction: column;
+  font-family: consolas, "courier new", monospace;
+  max-width: 700px;
+  margin: 80px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu h5 {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 70px;
+  letter-spacing: 4px;
+  width: 150px;
+  align-self: center;
+  text-transform: uppercase;
+}
+
+
+.menu-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.menu-tabs .tab {
+  flex: 1;
+  padding: 5px 0;
+  font-size: 18px;
+  border: none;
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  font-style: italic;
+  transition: all 0.3s ease;
+}
+
+.menu-tabs .tab.active {
+  background-color: #555;
+  color: white;
+}
+
+
+.menu-items {
+  text-align: left;
+  padding: 0 40px;
+}
+
+.menu-items .item {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.menu-items .item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.menu-items .item p {
+  font-size: 15px;
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu img {
+  margin: 20px 55px;
+  margin-top: 40px;
+  filter: grayscale(75%);
+  opacity: 1;
+  max-width: 800px;
+}
+
+.where {
+  text-align: center;
+  padding: 12px 24px 60px;
+  display: flex;
+  flex-direction: column;
+  font-family: consolas, "courier new", monospace;
+  max-width: 800px;
+  margin: 80px auto;
+}
+
+.where h5 {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 70px;
+  padding: 0 5px;
+  letter-spacing: 4px;
+  width: 250px;
+  align-self: center;
+  text-transform: uppercase;
+}
+
+.where p {
+  font-size: 16.5px;
+  margin-bottom: 20px;
+  display: block;
+  text-align: left;
+  margin: 20px 0 0 55px;
+}
+
+.where img {
+  margin: 20px 55px;
+  margin-top: 40px;
+  filter: grayscale(75%);
+  opacity: 1;
+  max-width: 700px;
+
+}
+
+.fyi {
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  width: fit-content;
+}
+
+.reserve {
+  font-size: 18px;
+  width: fit-content;
+  font-weight: 600;
+}
+
+.where form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 55px;
+  text-align: left;
+}
+
+.where form input {
+  padding: 16px 8px;
+  height: 50px;
+  font-size: 16px;
+}
+
+.where button {
+  width: 150px;
+  margin-left: 55px;
+  padding: 12px 0;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer {
+  padding: 70px;
+  background-color: gainsboro;
+  margin-bottom: -15px;
+  text-align: center;
+}
+
+footer p a {
+  color: black;
+}
+
+footer p a:hover {
+  color: green;
+}
+
+/* @media screen and (max-width:1440px) {
+
+  .home h1 {
+    font-size: 80px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+
+  .home .left {
+    font-size: 15px;
+    margin-top: -25px;
+    margin-left: 20px;
+
+  }
+
+  .home .right {
+    font-size: 15px;
+    margin-top: -25px;
+    margin-right: 20px;
+  }
+
+
+  .about h5 {
+    font-size: 20px;
+  }
+
+  .about .up p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .about .down p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+} */
+
+@media screen and (max-width:1024px) {
+
+  .home h1 {
+    font-size: 80px;
+    padding-top: 10px;
+    font-weight: 400;
+  }
+
+  .home .left {
+    margin-top: -130px;
+
+  }
+
+  .home .right {
+    margin-top: -130px;
+  }
+
+  .about .after {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:425px) {
+
+  .home h1 {
+    font-size: 70px;
+    padding-top: 20px;
+  }
+
+  .home .left {
+    display: none;
+  }
+
+  .home .right {
+    margin-top: -120px;
+    font-size: 12px;
+  }
+
+  .about {
+    padding: 0px 120px;
+    margin: 80px 15px;
+  }
+
+.about .up p {
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 0px;
+}
+
+.about .down p {
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 0px;
+}
+
+.about .quote {
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 0px;
+  margin: 0;
+}
+
+.about img {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.about .quote span {
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 0px;
+}
+
+.about .after {
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+  .menu-items .item p {
+    font-size: 18px;
+  }
+
+  .menu {
+    padding: 15px;
+  }
+}
